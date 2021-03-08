@@ -11,7 +11,45 @@ h1 {
 h2{
     font-weight: 300;
 }
+.list-filtres {
+    display: flex;
+    flex-direction: row;
+}
+.div-filtre {
+    display: flex;
+}
+i {
+    color: #0065FC ;   
+}
+.icon-filtre i {
+    display: flex;
+}
+.icon-filtre {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+}
+#info-icon {
+    background-color: #DEEBFF;
+    height: 2rem;
+    width: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;    
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
 
+}
 a {
     color:inherit;
     text-decoration: none;
