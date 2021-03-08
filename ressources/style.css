@@ -4,6 +4,18 @@
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    color:inherit;
+    text-decoration: none;
+}
+.menu a:active {
+    color: #0065FC;
+}
+.menu a b {
+    color: #0065FC;
+}
+
+
 h1 {
 
     font-weight:800;
@@ -11,31 +23,73 @@ h1 {
 h2{
     font-weight: 300;
 }
+
+ .text-area {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+ }
+.bouton-rechercher {
+    background-color: #0065FC ;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+}
+
 .list-filtres {
     display: flex;
     flex-direction: row;
 }
 .div-filtre {
     display: flex;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    align-items: center;
+    font-weight: bold;
+}
+.div-filtre :hover {
+    background-color: #DEEBFF ;
+}
+.filter-text {
+    margin: 0.5rem;
+    
 }
 i {
-    color: #0065FC ;   
+    color: #527CF2 ;   
 }
-.icon-filtre i {
+#icon-eco {
     display: flex;
 }
+#icon-family {
+    display: flex;
+}
+#icon-heart {
+    display: flex;
+}
+#icon-animal {
+    display: flex;
+}
+
 .icon-filtre {
     background-color: #DEEBFF;
     border-radius: 100%;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     min-height: 2.5rem;
     min-width: 2.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: -2px;
+    
 }
 #info-icon {
     background-color: #DEEBFF;
@@ -49,15 +103,5 @@ i {
     justify-content: center;
     margin-right: 1rem;
 
-}
-a {
-    color:inherit;
-    text-decoration: none;
-}
-.menu a:active {
-    color: #0065FC;
-}
-.menu a b {
-    color: #0065FC;
 }
 
