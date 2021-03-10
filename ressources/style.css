@@ -139,6 +139,82 @@ i {
     margin-right: 1rem;
 
 }
+
+.logements{
+    display: flex;
+    align-content: space-between;
+}
+.card {
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 5px 5px gray ;
+    background-color:  white;
+}
+
+
+.hebergements{
+    background-color: #F2F2F2;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+
+}
+
+.list-hebergements{
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 2rem;;
+}
+
+.hebergement-card {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+.star-rating {
+    display: flex;
+    align-content: space-around;
+}
+
+.hebergement-card img {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    height: 8.5rem;
+    object-fit: cover;
+}
+
+#popular-icon {
+    color: black;
+
+}
+
+.list-populaires {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #F2F2F2;
+    padding: 1.5rem;
+}
+.populaire-card {
+    padding: 5px;
+    display: flex;
+    margin: 0.75rem;
+    align-content: space-around;
+  
+}
+.popular-content {
+    display: flex;
+    flex-direction: column;
+}
+.populaire-card img {
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    width: 10rem;
+    height: 12rem;
+    margin-right: 1rem;;
+}
 .footer-div{
     display: flex;
     flex-direction: row;
