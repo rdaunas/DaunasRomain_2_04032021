@@ -239,8 +239,7 @@ i {
     margin-right: 1rem;;
 }
 
-.activites {
-    
+.activites {    
     display: grid;
     grid-template-columns: repeat(4, minmax(290px, 1fr));
     grid-template-rows: repeat(2, 16rem);
@@ -291,4 +290,40 @@ i {
 .footer-info a {
     margin:0.5rem 0.5rem 0.5rem 0rem;
     
+}
+@media only screen and (max-width: 1280px) {
+
+    body {
+        margin-left: 1rem;
+    }
+
+    .logements{
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: space-between;
+    }
+
+    .popular-header {
+        max-width: 90vw;
+    }
+    .populaire-card {
+        max-width: 20rem;;
+    }
+
+    .list-populaires {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .activites {
+    
+        display: grid;
+        grid-template-columns: repeat(2, minmax(290px, 1fr));
+        grid-template-rows: repeat(4, 16rem);
+    }
+    #big-activite2 {
+        grid-column: 1;
+        grid-row: 3/5;
+        margin: 1rem;
+    }
 }
