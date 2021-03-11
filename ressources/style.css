@@ -76,7 +76,6 @@ p {
 
 .list-filtres {
     display: flex;
-    align-content: left;
     flex-flow:wrap;
     margin: 1rem;
 }
@@ -106,7 +105,8 @@ p {
     
 }
 i {
-    color: #527CF2 ; 
+    color: #527CF2 ;
+    display: flex;     
       
 }
 .marker-icon {
