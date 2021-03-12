@@ -31,7 +31,6 @@ a {
     color: #0065FC;
 }
 
-
 h1 {
 
     font-weight:bold;
@@ -44,9 +43,11 @@ h2{
 h3 {
     margin-bottom: 0;
 }
+
 .big-activite h3, .medium-activite h3{
     margin-left: 1rem;
 }
+
 p {
     font-weight: 100;
 }
@@ -67,13 +68,19 @@ p {
  }
 .bouton-rechercher {
     background-color: #0065FC ;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 0 1rem 1rem 0;
 }
+.bouton-rechercher p {
+    margin : 0;
+}
+.bouton-rechercher i {
+    display: none;
 
+}
 .list-filtres {
     display: flex;
     flex-flow:wrap;
@@ -326,4 +333,71 @@ i {
         grid-row: 3/5;
         margin: 1rem;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .bouton-rechercher {
+        background-color: #0065FC ;
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+    .bouton-rechercher p {
+        display: none;
+    }
+    .bouton-rechercher i {
+        display: flex;
+        color:  white;
+        padding: 0.5rem;
+    
+    }
+    .filter-title {
+        flex-basis: 100% ;
+    }
+
+    .list-filtres {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin: 0;
+    }
+    
+    .populaire-card img {
+        width: 100%;
+        max-width: 8rem;
+
+    }
+
+    .hebergements {
+        margin: auto;
+    }
+
+    .hebergement-card h3, .hebergement-card h2, .hebergement-card .star-rating {
+        margin-left: 8px;
+    }
+    .list-hebergements {
+        display: flex;
+        flex-flow: column;
+        flex-grow: 2;
+    }
+    .activites {
+        display: flex;
+        flex-flow: column;
+    }
+    .activites img {
+        height: 10rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .activites h3 {
+       margin-bottom: 8px;
+    }
+
+.footer-div {
+    display: flex;
+    flex-flow: column;
+    background-color: #f2f2f2;
+}
 }
