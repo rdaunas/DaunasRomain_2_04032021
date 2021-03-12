@@ -23,8 +23,6 @@ a {
 }
 .menu-item:active {
     border-top: 2px solid #0065FC;
-}
-.menu a:active {
     color: #0065FC;
 }
 .menu a b {
@@ -337,6 +335,23 @@ i {
 
 @media only screen and (max-width: 600px) {
 
+    .menu{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .menu-item {
+        order: 2;
+        flex-grow: 1;
+    }
+    .menu-item:active {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+    #signin {
+        order: 1;
+        margin-left: auto;
+        flex-grow: 0;
+    }
     .bouton-rechercher {
         background-color: #0065FC ;
         padding: 1rem;
@@ -364,10 +379,13 @@ i {
         margin: 0;
     }
     
+    .populaire-card {
+        max-width: none;
+        width: 90%;
+    }
     .populaire-card img {
         width: 100%;
         max-width: 8rem;
-
     }
 
     .hebergements {
@@ -380,7 +398,6 @@ i {
     .list-hebergements {
         display: flex;
         flex-flow: column;
-        flex-grow: 2;
     }
     .activites {
         display: flex;
@@ -395,9 +412,12 @@ i {
        margin-bottom: 8px;
     }
 
-.footer-div {
-    display: flex;
-    flex-flow: column;
-    background-color: #f2f2f2;
-}
+    .footer-div {
+        display: flex;
+        flex-flow: column;
+        background-color: #f2f2f2;
+    }
+    .footer-info {
+        margin: 0.5rem;
+    }
 }
