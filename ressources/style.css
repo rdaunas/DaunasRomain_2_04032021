@@ -332,15 +332,18 @@ i {
         order: 2;
         flex-grow: 1;
     }
-    .menu-item:active {
-        border-top: none;
-        border-bottom: 2px solid #0065FC;
-    }
     #signin {
         order: 1;
         margin-left: auto;
         flex-grow: 0;
+        width:  50%;
     }
+   
+    .menu-item:active {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+    
     .bouton-rechercher {
         background-color: #0065FC ;
         padding: 1rem;
@@ -378,7 +381,7 @@ i {
     }
 
     .hebergements {
-        margin: auto;
+        margin: 0;
     }
 
     .hebergement-card h3, .hebergement-card h2, .hebergement-card .star-rating {
@@ -408,5 +411,21 @@ i {
     }
     .footer-info {
         margin: 0.5rem;
+    }
+}
+@media only screen and (max-width: 557px) {
+
+    .menu{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .menu-item {
+        order: 2;
+        flex-grow: 1;
+    }
+    #signin {
+        order: 1;
+        margin-left: auto;
+        flex-grow: 0;
     }
 }
