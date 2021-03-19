@@ -336,7 +336,7 @@ i {
         order: 2;
         flex-grow: 1;
     } 
-    .menu-item:active {
+    .menu__item:active {
         border-top: none;
         border-bottom: 2px solid #0065FC;
     }
