@@ -1,22 +1,27 @@
 
+/*
+rythme vertical (espacement ligne)
+*/
+
 *{
     font-family: 'Raleway', sans-serif;
 }
 body {
-    margin-left: 5rem;
+    padding: 2rem;
 }
-
 a {
     color:inherit;
     text-decoration: none;
 }
 h1 {
-
     font-weight:bold;
     font-size: 1.5rem;
+    margin-bottom: 0;
 }
 h2{
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 h3 {
     margin-bottom: 0;
@@ -24,6 +29,7 @@ h3 {
 }
 p {
     font-weight: 100;
+    margin: 0.5rem 0.5rem 0.5rem 0;
 }
 i {
     color: #527CF2 ;      
@@ -33,13 +39,23 @@ i {
 .star-rating {
     display: flex;
     margin-top: auto;
+    margin-bottom: 0.5rem;
 }
 .star-icon--disabled {
     color:#b1b4ba;
 }
 .card {
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 22px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 10px -8px rgba(88, 87, 87, 0.75);
+    background-color: white;
+}
+.card__content--hebergement {
+    margin-left: 0.5rem;
+}
+.card__content--popular {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
 }
 /* MENU STYLE */
 .menu {
@@ -56,6 +72,10 @@ i {
     text-align: center;
     
 }
+.menu__item:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
 .menu__item:active {
     border-top: 2px solid #0065FC;
     color: #0065FC;
@@ -69,6 +89,7 @@ i {
 /* Search Compo*/
 .header__search-component {
     display: flex;
+    margin-top: 30px;
 }
 .search-component__icon {
     color: black;
@@ -88,6 +109,8 @@ i {
     padding: 0 1.5rem;
     width: 10rem;
     font-weight: bold;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
  }
 .search-component__button {
     background-color: #0065FC ;
@@ -108,7 +131,7 @@ i {
 .filter-list {
     display: flex;
     flex-flow:wrap;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 .filter {
@@ -151,27 +174,31 @@ i {
     align-items: center;
 }
 .info__icon {
-    background-color: #DEEBFF;
+    /*background-color: #DEEBFF;*/
+    border: 2px solid #d9d9d9;
     height: 2rem;
     width: 2rem;
     min-height: 2rem;
     min-width: 2rem;    
     border-radius: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 1rem;
 }
 
 /* Content */
 .logements{
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 3rem;
 }
 /* Hebergements */
 .hebergements{
     background-color: #F2F2F2;
     margin-right: 3rem;
     border-radius: 1.5rem;
-    padding: 1rem;
-
+    padding: 2rem;
 }
 .hebergement__list{
     display: grid;
@@ -193,37 +220,44 @@ i {
     height: 8.5rem;
     object-fit: cover;
 }
-
+.hebergement__showMore{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: auto;
+    margin-bottom: 0;
+}
 
 /* Populaires */ 
+
+.populaires {
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
 
 .populaire__title {
     display: flex;
     align-items: center;
-    
+      
 }
 .populaire__icon {
     color: black;
     margin-left: auto;
+    
 }
 .populaire__list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    background-color: #F2F2F2;
+    grid-template-rows: repeat(3, 1fr);    
 }
 .populaire__card {
     padding: 5px;
     display: flex;
-    margin: 0.75rem;
+    margin: 1rem;
     align-content: space-around;
   
 }
-.popular__card__content {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
-}
+
 .populaire__card__img {
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
@@ -276,6 +310,7 @@ i {
 .footer{
     display: flex;
     justify-content: space-around;
+    background-color: #F2F2F2 ;
 }
 
 .footer__info{
@@ -309,7 +344,11 @@ i {
         flex-wrap: wrap;
     }
     .populaire__card {
-        max-width: 20rem;;
+        max-width: 20rem;
+        max-height: 10rem;
+    }
+    .populaire__card__img{
+        height:100%;
     }
 
     
@@ -325,6 +364,7 @@ i {
         margin: 1rem;
     }
 }
+
 /*  Mobile rules */
 @media only screen and (max-width: 600px) {
 
@@ -335,11 +375,8 @@ i {
     .menu__item {
         order: 2;
         flex-grow: 1;
+
     } 
-    .menu__item:active {
-        border-top: none;
-        border-bottom: 2px solid #0065FC;
-    }
     #signin {
         order: 1;
         margin-left: auto;
@@ -347,7 +384,9 @@ i {
         width:  50%;
     } 
   
-    
+    .search-component__text-area{
+        width: 100%;
+    }
     .search-component__button {
         background-color: #0065FC ;
         padding: 1rem;
@@ -415,21 +454,5 @@ i {
     }
     .footer__info {
         margin: 0.5rem;
-    }
-}
-@media only screen and (max-width: 557px) {
-
-    .menu{
-        display: flex;
-        flex-flow: wrap;
-    }
-    .menu__item {
-        order: 2;
-        flex-grow: 1;
-    }
-    #signin {
-        order: 1;
-        margin-left: auto;
-        flex-grow: 0;
     }
 }
