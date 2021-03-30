@@ -199,7 +199,7 @@ i {
     display: grid;
     column-gap: 2rem;
     row-gap: 2rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 2fr));
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 2rem;;
 }
@@ -329,7 +329,9 @@ i {
         flex-direction: column-reverse;
         align-content: space-between;
     }
-
+    .populaires{
+        margin-bottom: 2rem;
+    }
     .populaire__title {
         max-width: 90vw;
     }
@@ -345,7 +347,9 @@ i {
     .populaire__card__img{
         height:100%;
     }
-
+    .hebergements{
+        margin-right: 0;
+    }
     
     .activites {
     
@@ -423,6 +427,7 @@ i {
 
     .hebergements {
         margin: 0;
+        background-color: white;
     }
 
     .hebergement-card h3, .hebergement-card h2, .hebergement-card .star-rating {
