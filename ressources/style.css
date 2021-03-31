@@ -382,7 +382,6 @@ i {
     #signin {
         grid-row: 1;
         grid-column: 2;
-
     } 
   
     .search-component__text-area{
@@ -418,10 +417,11 @@ i {
     .populaire__card {
         max-width: none;
         width: 90%;
+        height: 8rem;
     }
     .populaire__card__img {
         width: 100%;
-        max-width: 8rem;
+        max-width: 8rem;        
     }
 
     .hebergements {
