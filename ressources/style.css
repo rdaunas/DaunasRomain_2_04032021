@@ -413,11 +413,15 @@ i {
         align-content: flex-start;
         margin: 0;
     }
-    
+    .populaires{
+        padding: 0;
+    }
     .populaire__card {
         max-width: none;
-        width: 90%;
+        width: 100%;
         height: 8rem;
+        margin-left: 0;
+        margin-right: 0;
     }
     .populaire__card__img {
         width: 100%;
