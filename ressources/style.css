@@ -141,7 +141,8 @@ i {
     align-items: center;
     margin-right:1rem;
     margin-left: 1rem;
-    margin: 0.75rem;    
+    margin: 0.75rem;  
+    cursor: pointer;  
 }
 .filter:hover {    
     background-color: #DEEBFF ;
@@ -253,7 +254,7 @@ i {
 .populaire__card {
     padding: 5px;
     display: flex;
-    margin: 1rem;
+    margin-bottom: 2rem;
     align-content: space-around;  
 }
 
@@ -360,7 +361,6 @@ i {
     .activite__card--big--2 {
         grid-column: 1;
         grid-row: 3/5;
-        margin: 1rem;
     }
 }
 /* Tablet portrait rules*/
@@ -383,11 +383,10 @@ i {
     }
     .populaire__card {
         max-height: 12rem;
-        width: 75vw;
+        width: 100%;
     }
     .populaire__card__img{
-        width: 100%;
-        max-width: 12rem;;
+        height: 20rem;
     }
     .hebergements{
         margin-right: 0;
