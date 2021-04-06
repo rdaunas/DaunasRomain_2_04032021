@@ -2,7 +2,7 @@
     font-family: 'Raleway', sans-serif;
 }
 body{
-     padding: 0;
+     padding: 20px;
 }
    
 a {
@@ -70,7 +70,7 @@ i {
     padding: 2rem;
     font-weight: 500;
     text-align: center;
-    
+    border-top: 2px solid transparent;
 }
 .menu__item:hover {
     border-top: 2px solid #0065FC;
@@ -404,6 +404,9 @@ i {
 /*  Mobile rules */
 @media only screen and (max-width: 600px) {
 
+    body {
+        padding: 0;
+    }
     .menu{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -411,6 +414,9 @@ i {
     }
     .menu__logo {
         margin: auto;
+    }
+    .menu__item{
+        border-bottom: 2px solid transparent;
     }
     .menu__item:hover {
         border-top: 0;
@@ -426,7 +432,9 @@ i {
         grid-row: 1;
         grid-column: 2;
     } 
-  
+    .search-component__icon{
+        height: auto;
+    }
     .search-component__text-area{
         width: 100%;
     }
@@ -459,7 +467,7 @@ i {
     .populaires{
         padding: 1rem;
     }
-    pulaire__card {
+    .populaire__card {
         max-width: none;
         width: 100%;
         min-height: 8rem;
