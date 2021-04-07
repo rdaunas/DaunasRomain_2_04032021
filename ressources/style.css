@@ -67,6 +67,7 @@ img {
 }
 .menu__logo {
     margin-right: auto;
+    object-fit: unset;
 }
 .menu__item{
     padding: 2rem;
