@@ -307,6 +307,9 @@ img {
 /* tablet landscape rules */ 
 @media only screen and (max-width: 1200px) {
 
+    .card__content--hebergement{
+        height: auto;
+    }
     .logements{
         display: flex;
         flex-direction: column-reverse;
