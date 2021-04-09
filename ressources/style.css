@@ -445,13 +445,13 @@ img {
     }
     .populaire__card__img { 
         margin-right: 5px;
-        min-height: 10rem;
-        min-width: 10rem; 
+        min-height: 8rem;
+        min-width: 8rem; 
         height: unset;
         max-height: unset; 
     }
     .populaire__card__img--resized{
-        max-height: 10rem;
+        max-height: 8rem;
     }
     .card__content--popular{
         padding: 5px;
