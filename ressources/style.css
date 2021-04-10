@@ -278,15 +278,13 @@ img {
 }
 .activite__card__img--big {
     height : 90%;
-    margin-bottom: -0.75rem;;
 }
 .activite__card__img--medium {
     height: 75%;
     width: 100%;
-    margin-bottom: -0.75rem;
 }
 .activite__card__title{
-    margin: 1rem;
+    padding:0.5rem
 }
 
 /* Footer */
@@ -344,6 +342,9 @@ img {
     .activite__card--big--2 {
         grid-column: 1;
         grid-row: 3/5;
+    }
+    .activite__card__img--medium{
+        height: 80%;
     }
 }
 /* Tablet portrait rules*/
@@ -478,12 +479,6 @@ img {
         height: 10rem;
         width: 100%;
     }
-    .activite__card__title {
-        font-size: 1rem;
-        padding: 10px;
-        margin-bottom: 8px;
-    }
-
     .footer {
         display: flex;
         flex-flow: column;
