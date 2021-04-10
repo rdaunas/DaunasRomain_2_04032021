@@ -115,6 +115,7 @@ img {
     font-weight: bold;
     border: none;
     border-radius: 0 16px 16px 0;
+    cursor: pointer;
 }
 .button__icon {
     display: none;
