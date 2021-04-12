@@ -190,7 +190,7 @@ img {
     display: grid;
     column-gap: 32px;
     row-gap: 32px;
-    grid-template-columns: repeat(3, minmax(0, 2fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 2rem;
     margin-top: 2rem;
