@@ -5,4 +5,4 @@ Transformez une maquette en site web
 
 Lien GitPages:
 
-https://rdaunas.github.io/DaunasRomain_2_04032021/#
+https://rdaunas.github.io/DaunasRomain_CssLayout/#
